@@ -1,13 +1,11 @@
 var btnGenera = document.getElementById('btn_genara');
 var btnAnnulla = document.getElementById('btn_annulla');
 
-btnGenera.addEventListener('click',
-function(){
-  var offer = "Standard ticket";
-  // console.log(offer);
-
+btnGenera.addEventListener('click',function(){
+  //// section#calcolo_biglietto
   //Genara ticket
   console.log('Genera Ticket');
+
   // Variabili: selezione valori input
   var fullNameInput = document.getElementById('full_name');
   var kmToGoInput = document.getElementById('km_to_go');
@@ -19,7 +17,8 @@ function(){
   var ageRange = ageRangeInput.value;
   console.log(fullName, kmToGo, ageRange);
 
-  // calcolo biglietto treno
+  // Variabili e calcolo biglietto treno
+  var offer = "Standard ticket";
   var costPerKm = 0.21;
   var ticketPrice = costPerKm * kmToGo;
   console.log(ticketPrice);
@@ -37,6 +36,25 @@ function(){
     ticketPrice = ticketPrice - (ticketPrice * 40) / 100;
     console.log(ticketPrice);
   }
+
+  // section#biglietto
+  //Variabili: selezione elementi del biglietto
+  var elPassenger = document.getElementById('passenger_name');
+  var elSconto = document.getElementById('sconto');
+  var elCarrozza = document.getElementById('carrozza');
+  var elCodice= document.getElementById('codice_cp');
+  var elTicket = document.getElementById('ticket_price');
+
+  // Genara numero carrozza e codice-cp
+  var numberCarrozza = Math.floor(Math.random() * 9) + 1 ;
+  var codiceCp = Math.floor(Math.random() * (100000 - 90000)) + 90000 ;
+
+  // Inserimento dati nel biglietto
+  elPassenger.innerHTML = fullName;
+  elSconto.innerHTML = offer;
+  elCarrozza.innerHTML = numberCarrozza;
+  elCodice.innerHTML = codiceCp;
+  elTicket.innerHTML = ticketPrice.toFixed(2) + "€";
 });
 
 btnAnnulla.addEventListener('click',
@@ -45,11 +63,12 @@ function(){
   console.log('Annulla operazione');
   document.getElementById('biglietto').style.display = "none";
 
+  // Variabili da nascondere: selezione valori input
   var fullNameInput = document.getElementById('full_name');
   var kmToGoInput = document.getElementById('km_to_go');
   var ageRangeInput = document.getElementById('age_range');
 
   fullNameInput.value = "";
   kmToGoInput.value = "";
-  ageRangeInput.value = "ageRangeInput.value.style.color = white";
+  ageRangeInput.value = "";
 });
