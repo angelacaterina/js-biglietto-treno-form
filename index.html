@@ -10,20 +10,34 @@
   <body>
     <section id="calcolo_biglietto">
       <h2>Calcola il prezzo del tuo biglietto</h2>
-      <div class="card">
-        <div class="row">
-          <div class="col"></div>
+      <div class="card-rounded">
+        <div class="row d-flex">
+          <div class="col d-flex">
+            <label for="name">Nome Cognome</label>
+            <input type="text" name="name" id="full_name">
+          </div>
           <!-- /.col -->
-          <div class="col"></div>
+          <div class="col d-flex">
+            <label for="km_to_go">Km da percorrere</label>
+            <input type="number" name="km_to_go" id="km_to_go">
+          </div>
           <!-- /.col -->
-          <div class="col"></div>
+          <div class="col d-flex">
+            <label for="age_range">Fascia d'età</label>
+            <select name="age_range" id="age_range">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+
+          </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->
 
         <div class="row">
-          <button>Genera</button>
-          <button>Annulla</button>
+          <button id="btn_genara">Genera</button>
+          <button id="btn_annulla">Annulla</button>
         </div>
         <!-- /.row -->
       </div>
