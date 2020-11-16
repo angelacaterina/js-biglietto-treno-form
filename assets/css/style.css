@@ -8,7 +8,10 @@ body{
   background-color: #B91450;
   font-family: 'Roboto', sans-serif;
 }
-
+.container{
+  width: 50%;
+  margin: auto;
+}
 
 /* tipography */
 h2{
@@ -16,7 +19,12 @@ h2{
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
+h4{
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
 
 label{
   color: #B91450;
@@ -33,22 +41,21 @@ label{
 
 /* selection ∞calcolo_biglietto */
 #calcolo_biglietto{
-  margin: 20px;
+  margin: 20px 0;
 }
-.row{
+#calcolo_biglietto .row{
   justify-content: space-around;
   padding: 20px;
 }
 
-.card-rounded{
-  width: 70%;
-  margin: auto;
+#calcolo_biglietto .card-rounded{
   background-color: white;
   border-radius: 6px;
+  box-shadow: 2px 2px 10px black;
 }
 
-.col{
-  flex-basis: calc(100% / 4);
+#calcolo_biglietto .col{
+  flex-basis: calc(100% / 3);
   padding: 50px;
   flex-direction: column;
 }
@@ -73,25 +80,27 @@ input, select{
 
 /* selection#biglietto */
 #biglietto{
-  width: 68%;
   margin: 0 auto 20px;
 }
 #card{
   padding: 20px;
 }
 
-
-th, td {
+#biglietto .col{
   width: calc(100% / 5);
-  text-align: left;
-  padding: 15px;
-  font-size: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
 }
-td{
-  padding-top: 30px;
-  font-size: 20px;
+#biglietto .col.name{
+  width: 250px;
 }
-
-#passenger_name_title, #passenger_name{
-  width: 200px;
+#biglietto .name > p{
+  margin-top: 10px;
+}
+#biglietto p{
+  margin-top: 100px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }

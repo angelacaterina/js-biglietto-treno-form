@@ -58,6 +58,7 @@ btnGenera.addEventListener('click',function(){
 
 
   document.getElementById('card').style.backgroundColor = "white";
+  document.getElementById('bg_grey').style.backgroundColor = "grey";
 
   var passengerDetail = document.getElementById('passenger');
   passengerDetail.innerHTML = "DETTAGLIO PASSEGERI";
@@ -72,9 +73,6 @@ btnGenera.addEventListener('click',function(){
   codiceCpTitle.innerHTML= "Codice CP";
   var ticketTitle = document.getElementById('ticket_price_title');
   ticketTitle.innerHTML= "Costo Biglietto";
-
-
-
 
 });
 

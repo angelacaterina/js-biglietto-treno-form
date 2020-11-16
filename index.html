@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
     <section id="calcolo_biglietto" class="text_center">
       <h2>Calcola il prezzo del tuo biglietto</h2>
       <div class="card-rounded ">
@@ -50,23 +50,35 @@
       <h2 class="text_center">Il tuo biglietto</h2>
       <div id="card">
         <h3 id="passenger"></h3>
-        <table id="table">
-          <tr>
-            <th id="passenger_name_title"></th>
-            <th id="offerta_title"></th>
-            <th id="carrozza_title"></th>
-            <th id="codice_cp_title"></th>
-            <th id="ticket_price_title"></th>
-          </tr>
-          <tr>
-            <td id="passenger_name"></td>
-            <td id="sconto"></td>
-            <td id="carrozza"></td>
-            <td id="codice_cp"></td>
-            <td id="ticket_price"></td>
-          </tr>
-        </table>
+        <div class="row d-flex">
+          <div class="col name" id="bg_grey">
+            <h4 id="passenger_name_title"></h4>
+            <p id="passenger_name"></p>
+          </div>
+
+          <div class="col">
+            <h4 id="offerta_title"></h4>
+            <p id="sconto"></p>
+          </div>
+
+          <div class="col">
+            <h4 id="carrozza_title"></h4>
+            <p id="carrozza"></p>
+          </div>
+
+          <div class="col">
+            <h4 id="codice_cp_title"></h4>
+            <p id="codice_cp"></p>
+          </div>
+
+          <div class="col">
+            <h4 id="ticket_price_title"></h4>
+            <p id="ticket_price"></p>
+          </div>
+        </div>
+        <!-- /.row -->
       </div>
+      <!-- /.card -->
     </section>
     <!-- /#biglietto -->
 
