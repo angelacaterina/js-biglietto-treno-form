@@ -4,11 +4,71 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #B91450;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* tipography */
+h2{
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+label{
+  color: #B91450;
+  margin-bottom: 10px;
+}
 /* UTILITY */
 .d-flex{
   display: flex;
 }
 
+.text_center{
+  text-align: center;
+}
+
+/* selection ∞calcolo_biglietto */
+#calcolo_biglietto{
+  margin: 20px;
+}
+.row{
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card-rounded{
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  border-radius: 6px;
+}
+
 .col{
+  flex-basis: calc(100% / 4);
+  padding: 50px;
+  border: 1px solid black;
   flex-direction: column;
 }
+
+input, select{
+  text-align: center;
+  border: 1px solid #B91450;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.btn{
+  border: 1px solid #808080;
+  border-radius: 6px;
+  padding: 5px;
+  color: #B91450;
+  background-color: #CCCCCC;
+}
+.btn:hover{
+  border: 2px solid #9C609D;
+}
+
+/* selection#biglietto */

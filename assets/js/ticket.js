@@ -55,6 +55,9 @@ btnGenera.addEventListener('click',function(){
   elCarrozza.innerHTML = numberCarrozza;
   elCodice.innerHTML = codiceCp;
   elTicket.innerHTML = ticketPrice.toFixed(2) + "€";
+
+  var passengerDetail = document.getElementById('passenger');
+  passengerDetail.innerHTML = "DETTAGLIO PASSEGERI";
 });
 
 btnAnnulla.addEventListener('click',
