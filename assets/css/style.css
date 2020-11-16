@@ -17,6 +17,7 @@ h2{
   margin-bottom: 20px;
 }
 
+
 label{
   color: #B91450;
   margin-bottom: 10px;
@@ -40,7 +41,7 @@ label{
 }
 
 .card-rounded{
-  width: 60%;
+  width: 70%;
   margin: auto;
   background-color: white;
   border-radius: 6px;
@@ -49,7 +50,6 @@ label{
 .col{
   flex-basis: calc(100% / 4);
   padding: 50px;
-  border: 1px solid black;
   flex-direction: column;
 }
 
@@ -73,14 +73,23 @@ input, select{
 
 /* selection#biglietto */
 #biglietto{
-  width: 58%;
-  margin: auto;
+  width: 68%;
+  margin: 0 auto 20px;
 }
+#card{
+  padding: 20px;
+}
+
 
 th, td {
   width: calc(100% / 5);
   text-align: left;
-  margin: 15px;
+  padding: 15px;
+  font-size: 20px;
+}
+td{
+  padding-top: 30px;
+  font-size: 20px;
 }
 
 #passenger_name_title, #passenger_name{
