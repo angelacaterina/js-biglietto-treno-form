@@ -56,9 +56,29 @@ btnGenera.addEventListener('click',function(){
   elCodice.innerHTML = codiceCp;
   elTicket.innerHTML = ticketPrice.toFixed(2) + "€";
 
+
+  document.getElementById('card').style.backgroundColor = "white";
+
   var passengerDetail = document.getElementById('passenger');
   passengerDetail.innerHTML = "DETTAGLIO PASSEGERI";
+
+  var passengerName = document.getElementById('passenger_name_title');
+  passengerName.innerHTML= "NOME PASSEGGERO";
+  var offertaTitle = document.getElementById('offerta_title');
+  offertaTitle.innerHTML= "Offerta";
+  var carrozzaTitle = document.getElementById('carrozza_title');
+  carrozzaTitle.innerHTML= "Carrozza";
+  var codiceCpTitle = document.getElementById('codice_cp_title');
+  codiceCpTitle.innerHTML= "Codice CP";
+  var ticketTitle = document.getElementById('ticket_price_title');
+  ticketTitle.innerHTML= "Costo Biglietto";
+
+
+
+
 });
+
+
 
 btnAnnulla.addEventListener('click',
 function(){

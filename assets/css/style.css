@@ -72,3 +72,17 @@ input, select{
 }
 
 /* selection#biglietto */
+#biglietto{
+  width: 58%;
+  margin: auto;
+}
+
+th, td {
+  width: calc(100% / 5);
+  text-align: left;
+  margin: 15px;
+}
+
+#passenger_name_title, #passenger_name{
+  width: 200px;
+}
